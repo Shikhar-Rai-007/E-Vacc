@@ -7,9 +7,9 @@ export default function Home() {
             <img src="https://img.freepik.com/free-vector/people-walking-sitting-hospital-building-city-clinic-glass-exterior-flat-vector-illustration-medical-help-emergency-architecture-healthcare-concept_74855-10130.jpg?w=2000" alt="home-img.svg"/>
         </div>
         <div className="content">
-            <h3>stay safe, stay healthy</h3>
-            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Rem Sed Autem Vero? Magnam, Est Laboriosam!</p>
-            <a href="/" className="btn">contact us <span className="fas fa-chevron-right"></span> </a>
+            <h3>stay safe, stay healthy, stay vaccinated</h3>
+            <p> Vaccination throughout the childhood is very essential as it helps in providing immunity before children are exposed to any life-threatening diseases.</p>
+            <a href="/Book" className="btn">Book Vaccination<span className="fas fa-chevron-right"></span> </a>
         </div>
     </section>
   )
