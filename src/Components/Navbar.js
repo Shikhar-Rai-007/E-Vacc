@@ -3,7 +3,7 @@ import './style.css';
 function Navbar() {
   return (
     <div className="header">
-    <a href="/" className="logo"> E-VACC</a>
+    <a href="/" className="logo"><i class="fas fa-heartbeat"></i> E-VACC</a>
     <nav className="navbar">
         <a href="/">Home</a>
         <a href="/Services">Services</a>

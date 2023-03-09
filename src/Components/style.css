@@ -91,7 +91,7 @@ section:nth-child(even){
     list-style-type: none;
 }
 .header .logo i{
-    color: wheat;
+    color: rgb(231, 67, 7);
 }
 .header .navbar a{
     text-decoration: none;

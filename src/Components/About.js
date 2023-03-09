@@ -7,7 +7,7 @@ function About() {
         <h1 className="heading"><span>about</span> us</h1>
         <div className="row">
             <div className="image">
-                <img src="./image/about-img.svg" alt=""/>
+                <img src="https://cdn.who.int/media/images/default-source/2021-dha-images/the-survey-team-interviews-migrant-workers-for-the-survey-on-covid-19-vaccine-for-myanmar-migrant-workers-in-maesot-tak-17-november-2021-who-anat-duangjan.jpg?sfvrsn=5227af5c_6" alt=""/>
             </div>
             <div className="content">
                 <h3>we take care of your healthy life</h3>

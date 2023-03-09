@@ -6,14 +6,16 @@ function Footer() {
        <section className="footer">
         <div className="box-container">
             <div className="box">
+                
                 <h3>quick links</h3>
-                <a href="#"> <i className="fas fa-chevron-right"></i> home</a>
-                <a href="#"> <i className="fas fa-chevron-right"></i> services</a>
-                <a href="#"> <i className="fas fa-chevron-right"></i> about</a>
-                <a href="#"> <i className="fas fa-chevron-right"></i> doctors</a>
-                <a href="#"> <i className="fas fa-chevron-right"></i> book</a>
-                <a href="#"> <i className="fas fa-chevron-right"></i> review</a>
-                <a href="#"> <i className="fas fa-chevron-right"></i> blogs</a>
+                <a href="/"><i className="fas fa-chevron-right"></i>Home</a>
+        <a href="/Services"><i className="fas fa-chevron-right"></i>Services</a>
+        <a href="/About"><i className="fas fa-chevron-right"></i>About</a>
+        <a href="/Doctor"><i className="fas fa-chevron-right"></i>Doctors</a>
+        <a href="/Book"><i className="fas fa-chevron-right"></i>Book</a>
+        <a href="/Review"><i className="fas fa-chevron-right"></i>Review</a>
+        <a href="/Blogs"><i className="fas fa-chevron-right"></i>Blogs</a>
+        <a href="/Login"><i className="fas fa-chevron-right"></i>Login</a>
             </div>
             <div className="box">
                 <h3>our services</h3>
