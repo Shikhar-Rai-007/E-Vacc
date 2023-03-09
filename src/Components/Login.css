@@ -1,5 +1,5 @@
 /* Import Google font - Poppins */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +13,7 @@ body {
   align-items: center;
   justify-content: center;
   background: #106b99;
-}
+} */
 .wrapper {
   position: relative;
   max-width: 470px;
