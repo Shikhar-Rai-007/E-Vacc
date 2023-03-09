@@ -1,11 +1,11 @@
 /* *{
     box-sizing: border-box;
-}
-body{
+} */
+/* body{
     background-image: url("Images/docb.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-}
+} */
 .wrapper{
     background-color: white;
     overflow: hidden;
@@ -97,4 +97,4 @@ h1{
         height: auto;
     }
     
-} */
+}
