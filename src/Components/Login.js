@@ -5,7 +5,7 @@ export default function Login() {
     <section class="wrapper">
       <div class="form signup">
         <header>Signup</header>
-        <form action="#">
+        <form method="POST" action="/user">
           <input type="text" placeholder="Full Name" required />
           <input type="text" placeholder="Parent's Name" required />
           <input type="date" placeholder="Date of Birth" required />
