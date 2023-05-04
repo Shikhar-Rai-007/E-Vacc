@@ -11,7 +11,7 @@
 
 *{
     font-family: 'Poppins', sans-serif;
-    margin: 0; padding: 5px;
+    margin: 0; 
     box-sizing: border-box;
     outline: none; border: none;
     text-transform: capitalize;
@@ -24,6 +24,9 @@ html{
     scroll-padding-top: 7rem;
     scroll-behavior: smooth;
 }
+a{
+    color: whitesmoke;
+}
 section{
     padding: 2rem 9%;
 }
@@ -32,7 +35,7 @@ section:nth-child(even){
 }
 .heading{
     text-align: center;
-    padding-top: 45px;
+    padding-top: 79px;
     text-shadow: var(--text-shadow);
     text-transform: uppercase;
     color: var(--black);
@@ -93,11 +96,20 @@ section:nth-child(even){
 .header .logo i{
     color: rgb(231, 67, 7);
 }
+.navbar{
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+}
+.x12{
+    color: rgb(5, 0, 0);
+}
 .header .navbar a{
     text-decoration: none;
     font-size: 1.7rem;
-    color: whitesmoke;
+    /* color: whitesmoke; */
     margin-left: 2rem;
+    list-style-type: none;
 }
 .header .navbar a:hover{
     color: black;
@@ -500,13 +512,13 @@ section:nth-child(even){
     }
 }
 
-@media (max-width:768px){
+/* @media (max-width:768px){
 
     #menu-btn{
         display: initial;
-    }
+    } */
 
-    .header .navbar{
+    /* .header .navbar{
         position: absolute;
         top:115%; right: 2rem;
         border-radius: .5rem;
@@ -532,7 +544,7 @@ section:nth-child(even){
         margin:2.5rem;
     }
 
-}
+} */
 
 @media (max-width:450px){
 
