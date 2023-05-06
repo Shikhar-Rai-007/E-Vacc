@@ -1,11 +1,13 @@
 const express=require('express');
-const Admin=require('../models/Admins');
+const Admins=require('../models/Admins');
 const router=express.Router();
 
 
 router.get('/',(req,res)=>{
     console.log(req.body);
-    res.send("Hello from the Backend");
+    const admin=Admins(req.body);
+    admin.save();
+    res.send(req.body);
 })
 
 
