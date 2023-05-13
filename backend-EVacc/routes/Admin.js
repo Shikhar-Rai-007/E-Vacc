@@ -12,15 +12,22 @@ router.get('/',(req,res)=>{
 })
 
 router.get('/getAllUsers',async (req,res)=>{
+    const{dob,phno}=req.body;
+
     const users=await Users.find();
+
+    // if(!user){
+    //     return res.status(401).json({error:'Invalid Date of Birth of Password'});
+    // }
+    //console.log(users);
     res.json(users);
 })
 
 router.post('/createUsers',async(req,res)=>{
     try{
-        const{firstName,lastName,phNo,age}=req.body;
+        const{firstName,lastName,phNo,dob,age}=req.body;
         const user=new Users({
-            firstName,lastName,phNo,age
+            firstName,lastName,phNo,dob,age
         })
 
         const savedUser=await user.save();

@@ -18,6 +18,10 @@ const UserSchema=new Schema({
         unique:true,
         required:true
     },
+    dob:{
+        type:String,
+        required:true
+    },
     age:{
         type:Number,
         required:true
