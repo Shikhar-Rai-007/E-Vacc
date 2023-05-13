@@ -2,20 +2,13 @@ const mongoose=require('mongoose');
 const {Schema}=mongoose;
 
 const AdminSchema=new Schema({
-    firstName:{
+    fullName:{
         type:String,
         default:'',
         required:true
     },
-    lastName:{
+    password:{
         type:String,
-        default:'',
-        required:true
-    },
-    phNo:{
-        type:Number,
-        default:0000000000,
-        unique:true,
         required:true
     },
     admin:{

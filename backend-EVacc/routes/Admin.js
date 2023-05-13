@@ -4,16 +4,24 @@ const Users = require('../models/Users');
 const router=express.Router();
 
 
-router.get('/',(req,res)=>{
+router.post('/SignUp',async (req,res)=>{
     console.log(req.body);
     const admin=Admins(req.body);
-    admin.save();
+    const response=await admin.save();
     res.send(req.body);
 })
 
-router.get('/getAllUsers',async (req,res)=>{
-    const{dob,phno}=req.body;
+router.post('/Login',async (req,res)=>{
+    const {fullName,password}=req.body;
 
+    const admin=await Users.find({$and:[{fullName:fullName},{password:password}]});
+
+    if(!admin){ return res.status(401).json({error:'Admin Does Not Exists'});}
+    console.log("Admin Logged In");
+    res.send(req.body.fullName);
+})
+
+router.get('/getAllUsers',async (req,res)=>{
     const users=await Users.find();
 
     // if(!user){
@@ -38,4 +46,5 @@ router.post('/createUsers',async(req,res)=>{
         res.status(500).send("Some Error Occured");
     }
 })
+
 module.exports=router;

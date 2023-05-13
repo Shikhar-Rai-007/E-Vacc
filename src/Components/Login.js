@@ -9,10 +9,10 @@ export default function Login() {
   const handleUser=async (event)=>{
     event.preventDefault();
     const dob=event.target.dob.value;
-    const phno=event.target.PhNo.value;
+    const phNo=event.target.PhNo.value;
 
     try{
-      const response=await axios.get('/admin/getAllUsers');
+      const response=await axios.post('/user/UserLogin',{dob,phNo});
       console.log(response);
       setUserData(response.data);
     }catch(error) {console.log(error);}
