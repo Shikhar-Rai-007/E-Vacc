@@ -18,8 +18,8 @@ export default function Login() {
     }catch(error) {console.log(error);}
   }
   return (
-    <div class="wrapper">
-      <div class="form signup">
+    <div className="wrapper">
+      <div className="form signup">
         <header>Vaccine Status</header>
         <form onSubmit={handleUser}> 
           <input type="string" name="dob" placeholder="Date of Birth" required />

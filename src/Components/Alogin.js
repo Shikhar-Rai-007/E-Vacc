@@ -27,8 +27,8 @@ function Alogin() {
     }
 
     return (
-    <div class="wrapper">
-      <div class="form signup">
+    <div className="wrapper">
+      <div className="form signup">
         <header>Admin's DashBoard</header>
         <form>
           <input type="text" name="fname" placeholder="Full Name" required />

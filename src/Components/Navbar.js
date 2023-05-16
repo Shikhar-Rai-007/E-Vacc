@@ -2,39 +2,30 @@ import React from 'react';
 import './style.css';
 function Navbar() {
   return (
-    <nav class="navbar navbar-expand-lg ">
+    <nav className="navbar navbar-expand-lg ">
     <div className="header">
-    <a href="/" className="logo"><i class="fas fa-heartbeat"></i> E-VACC</a>
+    <a href="/" className="logo"><i className="fas fa-heartbeat"></i> E-VACC</a>
     <nav className="navbar">
-    <li class="nav-item x12">
+    <li className="nav-item x12">
         <a href="/">Home</a>
     </li>
-    <li class="nav-item x12">
-        <a href="/Services">Services</a>
-        
-    </li>
-    <li class="nav-item x12">
+    
+    <li className="nav-item x12">
         <a href="/About">About</a>
         
     </li>
-    <li class="nav-item x12">
+    <li className="nav-item x12">
         <a href="/Book">Book</a>
         
     </li>
-    <li class="nav-item x12">
-        
-        <a href="/Blogs">Blogs</a>
-    </li>
-        {/* <a href="/Doctor">Doctors</a> */}
-        {/* <a href="/Review">Review</a> */}
-        {/* <a href="/Login">Login</a> */}
-        <li class="nav-item dropdown x12">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   
+        <li className="nav-item dropdown x12">
+        <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Login
         </a>
-        <div class="dropdown-menu x12" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="/alogin">Admin Login</a>
-          <a class="dropdown-item" href="/login">User Login</a>
+        <div className="dropdown-menu x12" aria-labelledby="navbarDropdownMenuLink">
+          <a className="dropdown-item" href="/alogin">Admin Login</a>
+          <a className="dropdown-item" href="/login">User Login</a>
          
         </div>
       </li>
