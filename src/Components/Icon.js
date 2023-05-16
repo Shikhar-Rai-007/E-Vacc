@@ -4,11 +4,11 @@ function Icon() {
   return (
     <div>
        <section className="icons-container">
-        <div className="icons">
+        {/* <div className="icons">
             <i className="fas fa-user-md"></i>
             <h3>140+</h3>
             <p>doctors at work</p>
-        </div>
+        </div> */}
         <div className="icons">
             <i className="fas fa-users"></i>
             <h3>1040+</h3>
@@ -16,8 +16,8 @@ function Icon() {
         </div>
         <div className="icons">
             <i className="fas fa-procedures"></i>
-            <h3>5000+</h3>
-            <p>Vaccine available</p>
+            <h3>50+</h3>
+            <p>Vaccine Research Information</p>
         </div>
         <div className="icons">
             <i className="fas fa-hospital"></i>

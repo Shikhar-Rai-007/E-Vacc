@@ -112,12 +112,12 @@ section:nth-child(even){
     list-style-type: none;
 }
 .header .navbar a:hover{
-    color: black;
+    color: rgb(6, 5, 5);
 }
 #menu-btn{
     font-size: 2.5rem;
     border-radius: .5rem;
-    background: #eee;
+    background: #000000;
     color:var(--green);
     padding: 1rem 1.5rem;
     cursor: pointer;
@@ -197,7 +197,7 @@ section:nth-child(even){
     gap: 2rem;
 }
 .services .box-container .box{
-    background: #fff;
+    background: #000000;
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
     border: var(--border);

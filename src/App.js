@@ -14,6 +14,10 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Alogin from "./Components/Alogin";
 import User from "./Components/User";
+import AdminPage from "./Components/Admin";
+import AdminDashBoard from "./Components/AdminDashBoard";
+import CreateUser from './Components/createUser';
+import UserProfile from "./Components/User";
 
 function App() {
   return (
@@ -28,7 +32,8 @@ function App() {
               <>
                 <Home />
                 <Icon />
-                <User/>
+                <AdminPage/>
+               
               </>
             }
           />
@@ -36,15 +41,17 @@ function App() {
 
           
 
-          <Route path="/Book" element={<Book />} />
-
+          <Route path="/AdminDashBoard" element={<AdminDashBoard />} />
+          <Route path="/CreateUser" element={<CreateUser/>} />
          
 
          
 
           <Route path="/Login" element={<Login />} />
+          <Route path="/Profile" element={<User/>} />
 
-         
+          <Route path="/Admin" element={<AdminPage/>} />
+          <Route path="/User" element={<UserProfile/>} />
           <Route path="/Alogin" element={<Alogin />} />
         </Routes>
       </BrowserRouter>
