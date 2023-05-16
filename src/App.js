@@ -13,11 +13,11 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Alogin from "./Components/Alogin";
-import User from "./Components/User";
+// import User from "./Components/User";
 import AdminPage from "./Components/Admin";
 import AdminDashBoard from "./Components/AdminDashBoard";
 import CreateUser from './Components/createUser';
-import UserProfile from "./Components/User";
+import UserProfile from "./Components/UserProfile";
 
 function App() {
   return (
@@ -48,7 +48,7 @@ function App() {
          
 
           <Route path="/Login" element={<Login />} />
-          <Route path="/Profile" element={<User/>} />
+          <Route path="/Profile" element={<UserProfile/>} />
 
           <Route path="/Admin" element={<AdminPage/>} />
           <Route path="/User" element={<UserProfile/>} />

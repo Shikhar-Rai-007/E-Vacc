@@ -1,5 +1,6 @@
 import React, {  useEffect,useState } from 'react';
 import './AdminPage.css';
+import axios from 'axios';
 //import { useNavigate } from 'react-router-dom';
 const AdminPage = () => {
   const [userData, setUserData] = useState([]);
@@ -39,10 +40,10 @@ const handleOnclick= async()=>{
             </tr>
           </thead>
           <tbody>
-            {userData.map(user => (
+            {userData && userData.map(user => (
               <tr key={user.phNo}>
-                <td>{user.fname}</td>
-                <td>{user.lname}</td>
+                <td>{user.firstName}</td>
+                <td>{user.lastName}</td>
                 <td>{user.phNo}</td>
                 <td>{user.dob}</td>
                 <td>{user.age}</td>

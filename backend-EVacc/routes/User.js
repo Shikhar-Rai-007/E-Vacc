@@ -4,12 +4,13 @@ const Users = require('../models/Users');
 const router=express.Router();
 
 router.post('/UserLogin',(req,res)=>{
-    const {dob,phNo}=req.body;
+    const {dateofBirth,phoneNumber}=req.body;
 
-    const currUser=Users.find({$and:[{dob:dob},{phNo:phNo}]});
+    const currUser=Users.find({$and:[{dob:dateofBirth},{phNo:phoneNumber}]});
     if(!currUser){ return res.status(401).json({error:'Invalid User Credentials'});}
     console.log("User Logged In");
-    res.send(req.body.dob);
+    console.log(currUser);
+    res.json(currUser);
 })
 
 
