@@ -14,7 +14,7 @@ export default function Login() {
     event.preventDefault();
     const dob=event.target.dob.value;
     const phNo=event.target.PhNo.value;
-    navigate('/User',{dob,phNo});
+    navigate('/UserProfile',{dob,phNo});
     // try{
     //   const response=await axios.post('/user/UserLogin',{dob,phNo});
     //   console.log(response);
