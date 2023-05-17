@@ -8,8 +8,6 @@ const AdminPage = () => {
   useEffect(() => {
     // Simulating fetching data from a database
     fetchUserData()
-      .then(data => setUserData(data))
-      .catch(error => console.log(error));
   }, []);
 
   const fetchUserData = async () => {
@@ -47,7 +45,7 @@ const handleOnclick= async()=>{
                 <td>{user.phNo}</td>
                 <td>{user.dob}</td>
                 <td>{user.age}</td>
-                <td>{user.vs}</td>
+                <td>Not Vaccinated</td>
                 <td><button onClick={handleOnclick}>Send message</button></td>
               </tr>
             ))}

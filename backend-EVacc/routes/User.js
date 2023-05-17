@@ -4,13 +4,12 @@ const Users = require('../models/Users');
 const router=express.Router();
 
 router.post('/UserLogin',async (req,res)=>{
-    const {dob,phNo}=req.body;
+    const {phNo,dob}=req.body;
 
-    const currUser=await Users.find({$and:[{dob:dob},{phNo:phNo}]});
-    if(!currUser){ return res.status(401).json({error:'Invalid User Credentials'});}
+    const currUser=await Users.find({$and:[{phNo:{$eq:phNo}},{dob:{$eq:dob}}]});
+    if(currUser.length===0){ return res.status(401).json({error:'Invalid User Credentials'});}
     console.log("User Logged In");
-    //console.log(currUser);
-    //const response=JSON.stringify(currUser);
+    console.log(currUser);
     res.json(currUser);
 })
 

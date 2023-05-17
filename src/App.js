@@ -1,7 +1,7 @@
 // import './App.css';
 import About from "./Components/About";
 
-import Book from "./Components/Book";
+// import Book from "./Components/Book";
 
 import Footer from "./Components/Footer";
 import Home from "./Components/Home";
@@ -32,7 +32,7 @@ function App() {
               <>
                 <Home />
                 <Icon />
-                <AdminPage/>
+               
                
               </>
             }
@@ -48,10 +48,10 @@ function App() {
          
 
           <Route path="/Login" element={<Login />} />
-          <Route path="/Profile" element={<UserProfile/>} />
+          <Route path="/UserProfile" element={<UserProfile/>} />
 
           <Route path="/Admin" element={<AdminPage/>} />
-          <Route path="/User" element={<UserProfile/>} />
+          {/* <Route path="/User" element={<UserProfile/>} /> */}
           <Route path="/Alogin" element={<Alogin />} />
         </Routes>
       </BrowserRouter>
